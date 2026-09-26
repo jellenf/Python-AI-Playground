@@ -1,0 +1,16 @@
+# Project Requirements
+
+## Business Requirements
+We want to create a quick reference map for users
+
+## User Requirements
+Users will be able to enter a place name (city, country) into a text box. The interface will then display an overview map of the city. We don't expect to be able to see street level detail, but the general outline of the city and a few major features such as coastlines and railroads.
+
+Do not query any map servers on the web repeatedly to create a wallpaper image. Only generate a map based on a single user query at a time.
+
+## Software Requirements
+Tech stack:
+Python
+
+## Documentation Requirements
+Create a markdown document describing the development process in moderate detail

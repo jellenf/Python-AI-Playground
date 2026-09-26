@@ -1,0 +1,24 @@
+# Project Requirements
+
+## Business Requirements
+
+We want a scientific calculator that includes:
+-Basic arithmetic
+-Trigonometry functions including calcuations of sine, cosine, tangent, and their inverse functions
+-Logorithms (base 10) and natural logortithms (base e)
+-Exonponents and roots (calculates squares, cubes, roots, powers)
+-Constants and Pi (include dedicated dkeys for mathematical constant like pi an e)
+
+## User Requirements
+
+-The user will expect a visual button interface to perform addition, subtraction, multiplication, division, and also an equals operand to compute totals. 
+-The user will be able compute exponents and mathematical operations within parentheses.
+-The software should remain visually consistent, no flashing or refreshing upon button press.
+-The visual theme should incorporate the elements of The Rocky Horror Picture Show
+
+## Software Requirements
+-Python 3
+-Python Flask
+-NO javascript
+-HTML/CSS
+-Include an .md file that traces your development steps for reproducibility 

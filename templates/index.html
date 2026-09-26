@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f4ec">
+  <title>Atlas / City Reference</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="/" aria-label="Atlas home"><span class="wordmark-icon" aria-hidden="true">A</span> atlas<span class="wordmark-divider">/</span><span class="wordmark-note">CITY REFERENCE</span></a>
+    <span class="topbar-note"><span class="live-dot" aria-hidden="true"></span> OPENSTREETMAP DATA</span>
+  </header>
+
+  <main class="workspace">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">A PLACE, IN OUTLINE</p>
+      <h1 id="page-title">Find your bearings.</h1>
+      <p class="intro-copy">A clear, quick look at the shape of a city.</p>
+    </section>
+
+    <form class="search" id="search-form">
+      <label class="search-label" for="place-input">PLACE</label>
+      <div class="search-control">
+        <span class="search-pin" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M19 10.2c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+        </span>
+        <input id="place-input" name="place" type="search" placeholder="Try Copenhagen, Denmark" autocomplete="off" maxlength="120" required>
+        <button class="search-button" type="submit"><span>Explore</span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6"/></svg></button>
+      </div>
+      <p class="search-note">CITY OR COUNTRY <span aria-hidden="true">·</span> ONE MAP PER SEARCH</p>
+    </form>
+
+    <section class="map-section" aria-labelledby="map-heading">
+      <div class="map-toolbar">
+        <div class="map-title-wrap"><span class="map-index">01</span><h2 id="map-heading">Overview</h2></div>
+        <div class="map-meta" id="map-meta"><span class="meta-dot" aria-hidden="true"></span><span id="map-status">AWAITING PLACE</span></div>
+      </div>
+      <div class="map-layout">
+        <div class="map-frame" id="map-frame" aria-live="polite">
+          <div class="empty-state" id="empty-state">
+            <div class="empty-mark" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+            <div class="empty-label"><span class="empty-coordinates">55° 40′ N &nbsp; 12° 34′ E</span><p>YOUR NEXT CITY, MAPPED</p></div>
+            <span class="empty-corner" aria-hidden="true">A / 01</span>
+          </div>
+          <img class="map-image" id="map-image" alt="" hidden>
+          <div class="map-loading" id="map-loading" hidden><span class="loading-ring" aria-hidden="true"></span><span>LOCATING PLACE</span></div>
+          <div class="map-error" id="map-error" role="alert" hidden></div>
+        </div>
+        <aside class="place-panel" aria-label="Map details">
+          <div class="place-number">DESTINATION <span>01 / 01</span></div>
+          <h3 id="place-name">No place selected</h3>
+          <p class="place-region" id="place-region">Enter a destination above</p>
+          <div class="coordinates">
+            <span class="detail-label">COORDINATES</span>
+            <span id="place-coordinates">--.--° &nbsp; --.--°</span>
+          </div>
+          <div class="legend">
+            <span class="detail-label">ON THE MAP</span>
+            <div><i class="legend-line coast" aria-hidden="true"></i>Coastline</div>
+            <div><i class="legend-line rail" aria-hidden="true"></i>Railway</div>
+            <div><i class="legend-pin" aria-hidden="true"></i>Place center</div>
+          </div>
+          <p class="attribution">Map data &amp; image <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="page-footer"><span>ATLAS <span aria-hidden="true">/</span> QUICK REFERENCE</span><span>MADE FOR GETTING ORIENTED</span></footer>
+  </main>
+</body>
+</html>
